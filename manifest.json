@@ -1,0 +1,12 @@
+{
+  "name": "Open With",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Extension aims to allow user to open a specified URL in new tab for a particular website.",
+  "content_scripts": [
+	{
+		"matches": ["https://*.youtube.com/*"],
+		"js": ["youtube_open.js"]
+	}
+  ]
+}
